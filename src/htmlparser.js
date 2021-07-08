@@ -109,19 +109,18 @@ class Node {
       if (!match) {
         break
       }
-      let value = PLACEHOLDERS[match.groups.value]
-      // 空属性
-      if (!value) {
+      // 可能只有属性名称，并没有属性值
+      // 在没有属性值时，不需要处理占位符
+      if (!match.groups.value) {
         continue
       }
 
-      const name = match.groups.name
-      // 属性值中可能包含变量
-      value = decode(value)
+      const value = PLACEHOLDERS[match.groups.value]
 
       this.attributes.setNamedItem({
-        name,
-        value
+        name: match.groups.name,
+		// 属性值中可能包含变量
+        value: value = decode(value)
       })
     }
   }
