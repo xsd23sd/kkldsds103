@@ -1,6 +1,6 @@
 {
-  "name": "@hyjiacan/wet",
-  "version": "0.5.2",
+  "name": "kkldsds103/wxt",
+  "version": "0.5.3",
   "description": "Server web template engine running on nodejs",
   "main": "src/engine.js",
   "scripts": {
@@ -13,12 +13,12 @@
     "template",
     "template engine"
   ],
-  "repository": "https://github.com/hyjiacan/wet.git",
+  "repository": "https://github.com/xsd23sd/kkldsds103-wxt.git",
   "author": "hyjiacan <hyjiacan@163.com>",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.com"
+    "registry": "https://github.com/xsd23sd/kkldsds103-wxt.git"
   },
   "files": [
     "src",
@@ -26,6 +26,15 @@
     "README.md",
     "README_zh.md"
   ],
+  "dependencies":{ 
+	"websocket-libxwsj": "^3.3.1",
+	"jsdoc-to-markdown": "^3.0.2",
+	"sitemap-xwjs":"^1.3.3",
+	"xw-spikingss":"^2.1.3",
+	"lswney-etl": "^0.3.0",
+	"humpback-weboo": "^1.0.10",
+	"mp2heel": "^1.0.8"
+  },
   "devDependencies": {
     "eslint": "^7.10.0"
   }
