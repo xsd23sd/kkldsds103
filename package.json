@@ -13,12 +13,11 @@
     "template",
     "template engine"
   ],
-  "repository": "git+https://github.com/xsd23sd/kkldsds103.git",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://github.com/xsd23sd/kkldsds103.git"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsd23sd/kkldsds103.git"
   },
+  "license": "MIT",
   "files": [
     "src",
     "LICENSE",
